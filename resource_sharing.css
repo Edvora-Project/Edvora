@@ -1,0 +1,166 @@
+/* Reset some browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfaf7;
+  color: #1a1a1a;
+}
+
+/* Header */
+header {
+  background-color: #1D283B;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.links{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.intro img{
+    height: 10rem;
+    width: 50rem;
+    border-radius: 20px;
+}
+
+.intro p{
+    line-height: 2rem;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  color: #7c0d14;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.view-btn,
+.upload-btn {
+  background-color: #7c0d14;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Resources Section */
+
+.branch {
+  background-color: #dcb38c;
+  padding: 20px;
+  margin-top: 50px;
+ 
+}
+
+
+.resources h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  width: 250px;
+  height: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.preview-box {
+  height: 80px;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/* Detailed Description Area */
+.resource-description {
+  background-color: #dcb38c;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Upload Form */
+.upload-form {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+
+.upload-form button {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #1D283B;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:190px;
+  
+}
