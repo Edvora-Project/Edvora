@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(239, 234, 228);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/*========= Navbar ============ */
+.navbar {
+  height: 70px;
+  background-color: rgb(29, 40, 59);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 40px;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-logo {
+  display: flex;
+  height: 20px;
+  width: 100px;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 60px;
+  width: 100%;
+  background-image: url("images/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quick_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.quick_links p {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1;
+} 
+
+.quick_links p:hover {
+  color: rgb(214, 184, 150);
+  text-decoration: underline;
+}
+
+/*========= Hero Section ============ */
+.hero_section{
+  height: 650px;
+  width: 100%;
+  display: flex;
+}
+
+.hero_image{
+  height: 379px;
+  width: 568px;
+  background-image: url(images/herosecimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 150px 150px 150px 150px;
+  border-radius: 10px;
+}
+
+.hero_des{
+  margin-bottom: 150px;
+  margin-top: 150px;
+  margin-right: 150px;
+}
+
+.hero_des h2{
+  font-family: Times;
+  color:rgb(100, 34, 38);
+  font-size:90px;
+  display: center;
+  margin-bottom: 60px;
+}
+
+.hero_des h4{
+  font-family: sans-serif;
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+  display: center;
+  margin-bottom: 60px;
+  font-style:normal;
+}
+.signupb, .loginb {
+  height: 60px;
+   width: 165px;
+  padding: 0 26px;
+  border-radius: 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left:60px;
+  transition: background-color 0.2s ease, transform 0.12s ease;
+}
+.signupb { background-color: rgb(100, 34, 38); color: white; }
+.signupb:hover { background-color: rgb(80, 20, 24); transform: translateY(-5px); }
+
+.loginb { background-color: rgb(217,217,217); color: #111; }
+.loginb:hover { background-color: rgb(200,200,200); transform: translateY(-5px); }
+
+/* overview section*/
+.section-heading{
+  color:rgb(29, 40, 59);
+  font-style:bold;
+  position: top right;
+  margin: 20px 50px;
+  font-size: 80px;
+}
+
+.overview p{
+  font-size: 35px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.cards{
+  width:100%;
+  height:470px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fourcards{
+  height:400px;
+  width:350px;
+  background-color:rgb(214, 184, 150);
+  border-radius: 20px;
+  position:80px;
+  margin:10px;
+  display:flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.fourcards h5{
+  color:rgb(29, 40, 59);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align:center;
+  vertical-align:text-bottom;
+  margin-top:80px;
+}
+
+.fourcards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.cardimage{
+  height: auto;
+  width: 230px;
+  position:center;
+   border-radius: 8px;
+}
+#card3{
+  margin-bottom:35px;
+}
+#card4{
+  margin-bottom:-25px;
+}
+
+/* ===== About Us ===== */
+.subpoints{
+  font-size: 45px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(100, 34, 38) ;
+  margin: 10px 100px;
+}
+
+.aboutus{
+  height:550px
+}
+.text{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 150px;
+  margin-bottom: 30px;
+}
+
+/* ===== FAQ Section ===== */
+.quesbox{
+  width:100%;
+  height:470px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+   gap: 10px;
+}
+
+.question{
+  height: 55px;
+  width:85%;
+  background-color:rgb(29, 40, 59);
+  color: White;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.question p { margin-left: 0; }
+
+.answer{
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  height:150px;
+  width:85%;
+  padding: 14px 18px;
+  
+}
+.answer p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 40px 40px 150px;
+  line-height: 30px;
+}
+.footer{
+  height:200px;
+  width:100%;
+  background-color:rgb(29, 40, 59) ;
+  color:white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+/* ===== Alumni guidance  ===== */
+.pageheader{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:55px;
+  color:rgb(100, 34, 38) ;
+  height:120px;
+  width:100%;
+  text-align: center;
+  margin:30px
+}
+
+.intro{
+  background-color: rgb(217,217,217);
+  height:80px;
+  width: 75%;
+  margin-left:12.5%;
+  text-align: center;
+}
+
+.intro p{
+    color:rgb(29, 40, 59) ;
+    font-size: 40px;
+    font-weight:700;
+    padding:20px;
+}
+
+.alumnisections {
+  width: 80%;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  padding: 20px;
+  position: center;
+  margin-left:10%;
+}
+
+.alucard {
+  background-color: rgb(214, 184, 150);
+  height: 350px;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;              
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+#alucardhover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+.alucard .text {
+  flex: 1 1 380px;
+  padding-right: 20px;
+  min-width: 280px;
+}
+.alucard h3 {
+  font-size: 50px;
+  color: rgb(29, 40, 59);
+  margin-bottom: 30px;
+}
+
+.alucard p {
+  font-size: 22px;
+  color: rgb(50, 50, 50);
+}
+
+.alucard .image {
+  flex: 0 0 220px;                     
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alucard .image img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.viewb{
+  height: 60px;
+  width: 165px;
+  padding: 0 26px;
+  border-radius: 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left:60px;
+  margin-top:70px;
+  transition: background-color 0.2s ease, transform 0.12s ease;
+}
+
+.viewb { background-color: rgb(100, 34, 38); color: white; }
+.viewb:hover { background-color: rgb(80, 20, 24); transform: translateY(-5px); }
+
+.loginsignup {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Card container */
+.container {
+  background-color: #d6b896;
+  padding: 40px;
+  border-radius: 12px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Titles */
+.title {
+  font-size: 28px;
+  color: rgb(100, 34, 38);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  background-color: rgb(251, 251, 251);
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Form box */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.form-box input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+.btn {
+  background-color: rgb(100, 34, 38);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(80, 20, 24);
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 900px) {
+  .hero_des h2 { font-size: 42px; }
+  .hero_image { width: 100%; max-width: 480px; height: 280px; }
+  .hero_section { padding: 40px 18px; gap: 30px; }
+  .section-heading { font-size: 32px; margin-left: 20px; }
+  .overview-desc { margin-left: 20px; margin-right: 20px; }
+  .alumnisections { width: 92%; }
+}
+
+@media (max-width: 520px) {
+  .hero_des h2 { font-size: 34px; }
+  .signupb, .loginb { padding: 0 18px; height: 48px; font-size: 16px; }
+  .cards { gap: 12px; }
+  .fourcards { width: 100%; max-width: 360px; }
+}
