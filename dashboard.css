@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfaf7;
+  color: #1a1a1a;
+}
+
+/* Header */
+header {
+  background-color: #1D283B;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.links{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  color: #7c0d14;
+  margin-bottom: 10px;
+}
+
+/* Dashboard Tiles */
+.dashboard-content {
+  padding: 20px;
+}
+
+.card-row {
+  background-color: #dcb38c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ gap:2rem;
+
+}
+
+
+.card p, .card a {
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.card-image img{
+  width: 100px;
+  height: 90px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+  
+}
+
+/* Footer */
+footer {
+  background-color: #1D283B;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:190px;
+  
+}
